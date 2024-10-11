@@ -22,7 +22,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
-        {/* <PlausibleProvider domain="" /> */}
+        <PlausibleProvider domain="dashboard-anayltics.vercel.app" />
       </head>
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
         {children}
