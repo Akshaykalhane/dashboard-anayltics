@@ -8,7 +8,10 @@ function Services() {
   const plausible = usePlausible();
   const onSubmit=()=>{
     if(isValid){
-      plausible("canDrive");
+      plausible("canDrive",{ props: {
+        event: 'validation age',
+        eventType: 'to check validation age'
+      }});
     }else{
       plausible("can'tDrive");
     }
