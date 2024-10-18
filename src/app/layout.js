@@ -1,6 +1,7 @@
 import localFont from "next/font/local";
 import "./globals.css";
 import PlausibleProvider from "next-plausible";
+import Script from "next/script";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -22,7 +23,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
-      <script
+      <Script
             id="hotjar"
             dangerouslySetInnerHTML={{
               __html: `
