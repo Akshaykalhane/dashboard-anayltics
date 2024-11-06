@@ -24,7 +24,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <head>
       {/* <Script */}
-          <Script
+          {/* <Script
            id="hotjar"
            strategy="afterInteractive"
            dangerouslySetInnerHTML={{
@@ -39,9 +39,9 @@ export default function RootLayout({ children }) {
                })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
              `,
            }}
-         />
+         /> */}
           {/* /> */}
-        {/* <PlausibleProvider domain="dashboard-anayltics.vercel.app" trackLocalhost="true" /> */}
+        <PlausibleProvider domain="dashboard-anayltics.vercel.app" trackLocalhost="true" />
       </head>
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
         {children}
