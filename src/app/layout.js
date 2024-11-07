@@ -41,7 +41,7 @@ export default function RootLayout({ children }) {
            }}
          /> */}
           {/* /> */}
-        <PlausibleProvider domain="dashboard-anayltics.vercel.app" trackLocalhost="true" />
+        <PlausibleProvider domain="fir-analytics-29226.web.app" trackLocalhost="true" />
       </head>
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
         {children}
